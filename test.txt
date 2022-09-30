@@ -1,1 +1,3 @@
-Тест
+git add .
+git commit -m "Тест"
+git push origin
