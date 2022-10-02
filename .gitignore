@@ -1,9 +1,9 @@
 /.git
 /.env
 /.vscode
-/config/*
-/data/*
-/logs/*
-/www/**
+#/config/*
+#/data/*
+#/logs/*
+#/www/**
 .DS_Store
 /buildtest
