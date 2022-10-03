@@ -1,6 +1,7 @@
 version: "3"
 
 services:
+
   webserver:
     build:
       context: ./bin/${PHPVERSION}
@@ -29,6 +30,9 @@ services:
       #XDEBUG_CONFIG: "client_host=host.docker.internal remote_port=${XDEBUG_PORT}"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - net
+      
   database:
     build:
       context: "./bin/${DATABASE}"
@@ -45,6 +49,9 @@ services:
       #MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - net
+      
   phpmyadmin:
     image: phpmyadmin
     container_name: "${COMPOSE_PROJECT_NAME}-phpmyadmin"
@@ -66,8 +73,18 @@ services:
     volumes:
       - /sessions
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
+    networks:
+      - net
+      
   #redis:
     #container_name: "${COMPOSE_PROJECT_NAME}-redis"
     #image: redis:latest
     #ports:
       #- "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
+      
+networks:
+  net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/24
