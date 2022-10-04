@@ -28,6 +28,7 @@ services:
       #MYSQL_DATABASE: ${MYSQL_DATABASE}
       HOST_MACHINE_MYSQL_PORT: ${HOST_MACHINE_MYSQL_PORT}
       #XDEBUG_CONFIG: "client_host=host.docker.internal remote_port=${XDEBUG_PORT}"
+      HOST_MYSQL_NAME: ${COMPOSE_PROJECT_NAME}-${DATABASE}   # HOST_MYSQL_NAME - переменная окружения, в ней хранится имя контейнера БД MySQL (нужна для подключения к БД в php)
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:
