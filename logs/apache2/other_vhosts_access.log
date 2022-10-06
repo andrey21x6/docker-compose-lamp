@@ -1,0 +1,6 @@
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:10:57 +0000] "GET /boss/?exit HTTP/1.1" 404 493 "http://192.168.100.29/boss/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:10:58 +0000] "GET /favicon.ico HTTP/1.1" 404 492 "http://192.168.100.29/boss/?exit" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:01 +0000] "GET /boss/?exit HTTP/1.1" 404 492 "http://192.168.100.29/boss/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:02 +0000] "GET /?id=122-HUSNULLINA HTTP/1.1" 200 866 "http://192.168.100.29/?id=122-HUSNULLINA" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:05 +0000] "GET /?id=122-HUSNULLINA HTTP/1.1" 200 866 "http://192.168.100.29/?id=122-HUSNULLINA" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:49 +0000] "-" 408 0 "-" "-"
