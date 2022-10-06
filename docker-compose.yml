@@ -88,3 +88,27 @@ networks:
     #image: redis:latest
     #ports:
       #- "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
+      
+#===================================================
+
+# Пример статики
+
+#version: '2'
+
+#services:
+
+  #nginx:
+    #image: nginx
+    #container_name: nginx-container
+    #networks:
+      #static-network:
+        #ipv4_address: 172.28.5.2
+        
+#networks:
+  #static-network:
+    #ipam:
+      #config:
+        #- subnet: 172.28.0.0/16
+          #ip_range: 172.28.5.0/24
+
+#===================================================
