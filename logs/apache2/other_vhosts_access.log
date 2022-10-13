@@ -4,3 +4,4 @@ localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:01 +0000] "GET /boss/?exit H
 localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:02 +0000] "GET /?id=122-HUSNULLINA HTTP/1.1" 200 866 "http://192.168.100.29/?id=122-HUSNULLINA" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:05 +0000] "GET /?id=122-HUSNULLINA HTTP/1.1" 200 866 "http://192.168.100.29/?id=122-HUSNULLINA" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 localhost:80 192.168.100.100 - - [06/Oct/2022:12:11:49 +0000] "-" 408 0 "-" "-"
+localhost:80 192.168.100.100 - - [06/Oct/2022:13:34:41 +0000] "GET / HTTP/1.1" 200 867 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"

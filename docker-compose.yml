@@ -75,6 +75,8 @@ services:
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
     networks:
       - net
+    depends_on: 
+      - webserver
       
 networks:
   net:
